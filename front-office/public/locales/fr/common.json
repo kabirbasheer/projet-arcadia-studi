@@ -1,0 +1,574 @@
+{
+  "app": {
+    "welcome": "Bienvenue sur Evolios",
+    "description": "Découvrez comment Evolios révolutionne la gestion de votre entreprise avec des fonctionnalités innovantes et intuitives."
+  },
+  "seo": {
+    "notFound": {
+      "templateTitle": "Evolios"
+    },
+    "feature": {
+      "templateTitle": "Fonctionnalités",
+      "description": "Découvrez les fonctionnalités d'Evolios"
+    },
+    "contact": {
+      "templateTitle": "Contact",
+      "description": "Des questions ? Besoin d'aide ? Contactez-nous !"
+    },
+    "faq": {
+      "templateTitle": "Foire Aux Questions",
+      "description": "Découvrez les questions les plus fréquemment posées sur Evolios"
+    },
+    "price": {
+      "templateTitle": "Tarif",
+      "description": "Découvrez nos tarifs pour tous vos besoins"
+    }
+  },
+  "navbar": {
+    "home": "Accueil",
+    "price": "Tarif",
+    "features": "Fonctionnalités",
+    "FAQ": "FAQ",
+    "aPropos": "À Propos",
+    "contact": "Nous contacter",
+    "joinUs": "Rejoignez-nous",
+    "personalData": "Données personnelles",
+    "confidentiality": "Règle de confidentialité"
+  },
+  "footer": {
+    "by": " | Evolios",
+    "home": "Accueil",
+    "linkedin": "Linkedin",
+    "facebook": "Facebook",
+    "personalData": "Données personnelles",
+    "confidentiality": "Règle de confidentialité",
+    "faq": "Foire aux questions",
+    "address": "6 rue de l'equerre, <br/> (A MODIFIER)",
+    "phone": "01 00 00 00 00",
+    "mobile": "06 00 00 00 00",
+    "email": "contact@evolios.fr",
+    "features": "Fonctionnalités",
+    "price": "Tarif",
+    "title": {
+      "social": "Nous rejoindre",
+      "about": "A propos",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "La gestion des entreprises du bâtiment devient enfin simple",
+      "subtitle": "Evolios améliore la gestion des entreprises du bâtiment"
+    },
+    "header": {
+      "title": "La gestion des entreprises du bâtiment devient enfin simple",
+      "buttonLabel": "button 1",
+      "buttonLabel2": "button 2"
+    },
+    "CAT": {
+      "title": "Nous sommes à votre écoute !",
+      "description": "Vous avez une question, une suggestion ou une demande particulière ? N'hésitez pas à nous contacter."
+    },
+    "blockText": {
+      "title": "Vestibulum id ligula por semper.",
+      "descriptionTitle": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.",
+      "title1": "Mollis commodo",
+      "description1": "Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. ",
+      "title2": "Lorem Risus",
+      "description2": "Lipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.",
+      "title3": "Fermentum Sit",
+      "description3": "Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies.",
+      "title4": "Duis ommodo",
+      "description4": "Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.",
+      "actionButton": "En savoir plus"
+    }
+  },
+  "contact": {
+    "title": "Besoin d'aide ? Des questions ?",
+    "project": "Un projet ? Contactez-nous !",
+    "contact": "Nous contacter",
+    "projectDescription": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.    ",
+    "description": "Contactez-nous sans perdre plus de temps"
+  },
+  "faq": {
+    "title": "Les <colored>questions</colored> les plus fréquentes",
+    "buttonLabel": "Consulter la FAQ",
+    "globalTitle": "Des questions autour de Evolios ?",
+    "descriptionTitle": "On vous dit tout dans la foire aux questions !",
+    "seeMore": "Voir plus",
+    "QA": {
+      "question1": "À quoi sert l'application Evolios ?",
+      "answer1": "Evolios a un but très précis et très simple ! Il permet à tous citoyens de contribuer au bien être de sa ville en signalant les incidents qui peuvent y survenir au quotidien pour y remédier le plus rapidement possible. (ex: arbre sur la chaussée, dépôt sauvage d'ordure)",
+      "question2": "Comment signaler un incident ?",
+      "answer2": "Nous avons fait le maximum pour permettre à nos utilisateurs de facilement signaler un incident. En cliquant sur 'Je signale' dans la page d'accueil, vous serez mené à répondre à quelques courtes questions qui permettront de créer votre ticket !",
+      "question3": "Je ne suis pas géolocalisé, que faire ?",
+      "answer3": "Ce problème peut arriver de plusieurs facteurs. Dans un premier temps, vérifiez que votre réseau fonctionne bien. Vérifiez que vous autorisez l'application à l'usage de la localisation, puis relancez l'application. Si le problème persiste, n'hésitez pas à contacter notre service client."
+    },
+    "faqExtended": {
+      "section1": {
+        "title": "Organisation :",
+        "items": {
+          "question1": "Comment puis-je gérer les comptes utilisateurs sur Evolios ?",
+          "answer1": "Pour gérer les comptes utilisateurs, accédez à la section 'Organisation' dans le tableau de bord. Vous pouvez créer, modifier ou supprimer des comptes utilisateurs, et assigner des rôles spécifiques (utilisateur avec accès ou personnel sans accès).",
+          "question2": "Comment puis-je modifier les informations de base de mon compte ?",
+          "answer2": "Pour modifier les informations de base de votre compte, allez dans 'Mon Profil' et cliquez sur 'Éditer les informations'. Vous pourrez mettre à jour votre nom, adresse e-mail, et autres informations pertinentes.",
+          "question3": "Comment puis-je changer mon mot de passe ?",
+          "answer3": "Pour changer votre mot de passe, allez dans 'Mon Profil', sélectionnez 'Modifier le mot de passe', et suivez les instructions pour définir un nouveau mot de passe."
+        }
+      },
+      "section2": {
+        "title": "Gestion entreprise (interne)",
+        "items": {
+          "question1": "Comment puis-je assigner un compte utilisateur à une entreprise ?",
+          "answer1": "Dans la section 'Gestion entreprise', sélectionnez l'entreprise à laquelle vous souhaitez assigner un utilisateur. Cliquez sur 'Assigner un utilisateur' et choisissez le compte utilisateur à associer.",
+          "question2": "Comment créer, éditer ou supprimer une entreprise ?",
+          "answer2": "Pour créer, éditer ou supprimer une entreprise, accédez à la section 'Gestion entreprise' et utilisez les boutons appropriés pour chaque action. Suivez les instructions à l'écran pour compléter l'opération.",
+          "question3": "Comment utiliser l'API pour valider le SIRET ?",
+          "answer3": "Lors de la création ou de l'édition d'une entreprise, vous verrez une option pour entrer le numéro SIRET. Evolios utilise une API pour vérifier automatiquement la validité du SIRET entré."
+        }
+      },
+      "section3": {
+        "title": "Produits",
+        "items": {
+          "question1": "Comment puis-je rechercher un produit dans la liste ?",
+          "answer1": "Utilisez la barre de recherche dans la section 'Produits' pour trouver rapidement un produit spécifique en entrant son nom ou d'autres critères pertinents.",
+          "question2": "Comment créer, éditer ou supprimer un produit ou une catégorie ?",
+          "answer2": "Pour gérer les produits et les catégories, accédez à la section 'Produits' et utilisez les boutons 'Créer', 'Éditer' ou 'Supprimer' pour effectuer les actions souhaitées. Suivez les instructions fournies pour chaque étape."
+        }
+      },
+      "section4": {
+        "title": "Devis",
+        "items": {
+          "question1": "Comment créer un devis sur Evolios ?",
+          "answer1": "Dans la section 'Devis', cliquez sur 'Créer un devis' et suivez les étapes pour ajouter des produits, des sections, et définir les quantités. Vous pouvez également sélectionner une entreprise, un contact et une adresse.",
+          "question2": "Puis-je dupliquer un devis existant ?",
+          "answer2": "Oui, vous pouvez dupliquer un devis existant en cliquant sur le bouton 'Dupliquer' à côté du devis souhaité. Cela créera une copie que vous pourrez modifier si nécessaire.",
+          "question3": "Comment ajouter une ristourne à un devis ?",
+          "answer3": "Lors de l'édition d'un devis, vous verrez une option pour ajouter une ristourne. Entrez le pourcentage ou le montant de la ristourne, et il sera automatiquement appliqué au total du devis.",
+          "question4": "Comment transformer un devis en facture ?",
+          "answer4": "Une fois un devis validé, vous pouvez le transformer en facture en cliquant sur le bouton 'Valider'. Cela convertira automatiquement le devis en facture prête à être envoyée ou imprimée."
+        }
+      },
+      "section5": {
+        "title": "Facture",
+        "items": {
+          "question1": "Comment créer une facture sur Evolios ?",
+          "answer1": "La création d'une facture suit les mêmes étapes que la création d'un devis. Accédez à la section 'Factures' et cliquez sur 'Créer une facture'. Ajoutez les produits, sélectionnez l'entreprise, et remplissez les détails nécessaires.",
+          "question2": "Puis-je supprimer une facture ?",
+          "answer2": "Vous pouvez supprimer une facture uniquement si elle est en état de brouillon. Pour ce faire, allez dans la section 'Factures', sélectionnez la facture en brouillon et cliquez sur 'Supprimer'.",
+          "question3": "Comment créer un avoir ?",
+          "answer3": "Pour créer un avoir, accédez à la section 'Factures' et sélectionnez la facture concernée. Cliquez sur 'Créer un avoir' et suivez les étapes pour générer le document."
+        }
+      },
+      "section6": {
+        "title": "Entreprise cliente",
+        "items": {
+          "question1": "Comment gérer les informations d'une entreprise cliente ?",
+          "answer1": "Dans la section 'Entreprise cliente', vous pouvez créer, éditer ou supprimer des entreprises clientes, des contacts et des adresses. Utilisez les boutons appropriés pour chaque action et suivez les instructions à l'écran.",
+          "question2": "Comment assigner un contact principal à une entreprise cliente ?",
+          "answer2": "Lors de la création ou de l'édition d'une entreprise cliente, vous pouvez désigner un contact principal en sélectionnant le contact dans le menu déroulant 'Contact principal'.",
+          "question3": "Comment visualiser les devis et factures d'un client ?",
+          "answer3": "Accédez à la fiche de l'entreprise cliente et cliquez sur 'Devis' ou 'Factures' pour voir la liste complète des documents associés à ce client. Vous pourrez ainsi suivre les transactions et l'historique des documents."
+        }
+      }
+    },
+    "faqPrice": {
+      "title": "Les questions fréquemment posées",
+      "faq": "FAQ",
+      "section1": {
+        "question": "Quels sont les moyens de paiement acceptés ?",
+        "answer": "Evolios accepte les cartes de crédit, les virements bancaires et d'autres options de paiement en ligne courantes."
+      },
+      "section2": {
+        "question": "Comment fonctionne le paiement des packs ?",
+        "answer": "Le paiement des packs se fait par abonnement mensuel ou annuel. Choisissez votre pack, sélectionnez votre mode de paiement préféré et procédez au règlement en ligne."
+      },
+      "section3": {
+        "question": "Est-ce que j'aurai une facture après chaque paiement ?",
+        "answer": "Oui, une facture détaillée est générée et envoyée par email après chaque paiement. Vous pouvez également consulter vos factures dans votre compte utilisateur."
+      },
+      "section4": {
+        "question": "Puis-je annuler mon abonnement à tout moment ?",
+        "answer": "Oui, vous pouvez annuler votre abonnement à tout moment depuis votre compte utilisateur. L'annulation prendra effet à la fin de la période de facturation en cours."
+      },
+      "section5": {
+        "question": "Puis-je être remboursé si j'annule mon abonnement ?",
+        "answer": "Les remboursements dépendent des conditions de votre abonnement. En général, les remboursements ne sont pas offerts pour les périodes déjà payées, mais contactez notre support pour discuter de votre situation."
+      },
+      "section6": {
+        "question": "Le support client est-il gratuit ?",
+        "answer": "Oui, Evolios offre un support client gratuit pour tous les utilisateurs. Vous pouvez nous contacter via email ou chat pour toute assistance technique ou questions."
+      },
+      "section7": {
+        "question": "Puis-je avoir une démo du produit avant de m'abonner ?",
+        "answer": "Oui, nous offrons des démonstrations gratuites pour vous permettre de découvrir les fonctionnalités d'Evolios. Contactez-nous pour programmer une démo."
+      },
+      "section8": {
+        "question": "Comment modifier les informations de mon compte utilisateur ?",
+        "answer": "Vous pouvez éditer vos informations de base et modifier votre mot de passe à tout moment via les paramètres de votre compte utilisateur."
+      }
+    }
+  },
+  "price": {
+    "title" : "Choisissez Votre Plan",
+    "actionButton" : "Let’s Go",
+    "seePrice" : "Voir les tarifs",
+    "plan1": {
+      "planLabel": "Basic",
+      "priceLabel": "Gratuit",
+      "features": {
+        "section1": {
+          "sectionTitle": "Organisation",
+          "items": {
+            "feature1": "Gestion des comptes utilisateurs",
+            "feature2": "Gestion de 2 rôles (utilisateur avec accès / personnel sans accès)",
+            "feature3": "Edition des informations de base",
+            "feature4": "Modifier le mot de passe"
+          }
+        },
+        "section2": {
+          "sectionTitle": "Produits",
+          "items": {
+            "feature1": "Liste (avec possibilité de recherche)",
+            "feature2": "Création / édition / suppression de produit",
+            "feature3": "Création / édition / suppression de catégorie"
+          }
+        }
+      }
+    },
+    "plan2": {
+      "planLabel": "Plus",
+      "priceLabelMonth": "15",
+      "priceLabelYear": "180",
+      "billingCycle": "/ mois",
+      "features": {
+        "section1": {
+          "sectionTitle": "Toutes les fonctionnalités du plan Basic"
+        },
+        "section2": {
+          "sectionTitle": "Gestion entreprise (interne)",
+          "items": {
+            "feature1": "Assignation d'un compte utilisateur à une entreprise",
+            "feature2": "Création / édition / suppression d'entreprise",
+            "feature3": "Utilisation d'API pour valider le SIRET"
+          }
+        },
+        "section3": {
+          "sectionTitle": "Devis",
+          "items": {
+            "feature1": "Création d'un devis",
+            "feature2": "Duplication d'un devis",
+            "feature3": "Edition d'un devis (possibilité de rajouter des produits, sections, déplacer les produits, quantité)",
+            "feature4": "Sélection entreprise / contact / adresses",
+            "feature5": "Calcul automatique de TVA (par groupe de TVA)",
+            "feature6": "Possibilité d'ajouter une ristourne",
+            "feature7": "Valider un devis => transformation en facture",
+            "feature8": "Impression / Envoi par email",
+            "feature9": "Supprimer un devis (si non validé)",
+            "feature10": "Enregistrement toutes les 3 minutes (pour ne pas perdre le devis)",
+            "feature11": "Système de brouillon"
+          }
+        }
+      }
+    },
+    "plan3": {
+      "planLabel": "Premium",
+      "priceLabelMonth": "29",
+      "priceLabelYear": "348",
+      "billingCycle": "/ mois",
+      "features": {
+        "section1": {
+          "sectionTitle": "Toutes les fonctionnalités du plan Premium"
+        },
+        "section2": {
+          "sectionTitle": "Facture",
+          "items": {
+            "feature1": "Mêmes fonctionnalités que le devis",
+            "feature2": "Suppression possible si en brouillon",
+            "feature3": "Bouton manuel de relance",
+            "feature4": "Possibilité de créer un avoir"
+          }
+        },
+        "section3": {
+          "sectionTitle": "Entreprise cliente",
+          "items": {
+            "feature1": "Création / édition / suppression d'entreprise",
+            "feature2": "Création / édition / suppression de contact",
+            "feature3": "Création / édition / suppression des adresses",
+            "feature4": "Gestion d'un contact principal",
+            "feature5": "Gestion de la TVA / Siret",
+            "feature6": "Visualisation des devis / factures d'un client"
+          }
+        }
+      }
+    }
+  },
+  "collectivite": {
+    "buzzWordTitle": "Équipez-vous de Evolios !",
+    "buzzWords": "une plateforme unique, un service support à l’écoute, gestion centralisée des alertes, gain de temps notable, orientation rapide des signalements, communication fluide avec citoyens, suivi efficace des interventions, amélioration du service public, optimisation des ressources, réactivité accrue aux incidents, retours citoyens instantanés, modernisation de l'administration",
+    "banner": {
+      "title": "Vous représentez une collectivité ?",
+      "titleMobile": "Vous représentez <br/> une collectivité ?",
+      "description": "Automatisez le suivi, priorisez les interventions et travaillez sereinement avec Evolios",
+      "largeDescription": "</br> Avec <strong>Evolios</strong>, engagez-vous dans une démarche <u>citoyenne digitale</u>.",
+      "boutonLabel": "Je souhaite être contacté"
+    },
+    "CAT": {
+      "title": "Testez Evolios !",
+      "description": "Nous vous accompagnons en permanence avec un support dédié."
+    }
+  },
+  "404": {
+    "title": "Erreur 404",
+    "description": "Page inexistante.",
+    "buttonLabel": "Retour à l'accueil"
+  },
+  "pro": {
+    "baseline": "Équipez-vous de Evolios",
+    "title": "Optimisez votre travail",
+    "description": "Evolios, comment ça marche pour l'agent administratif ?",
+    "secondTitle": "Conçu avec vous",
+    "secondDescription": "Nous concevons des solutions efficaces grâce à l'aide de nos partenaires de collectivités",
+    "thirdTitle": "Simple à utiliser",
+    "thirdDescription": "Evolios fournit aux agents comme aux usagers des technologies faciles à utiliser et en libre-service",
+    "features": {
+      "1": {
+        "title": "Réception et évaluation",
+        "description": "Dès qu'un citoyen signale une anomalie, elle est immédiatement visible dans votre espace de gestion. Évaluez l'urgence pour déterminer la priorité d'intervention."
+      },
+      "2": {
+        "title": "Orientation vers le service adéquat",
+        "description": "D'un simple clic, dirigez l'alerte vers le service compétent."
+      },
+      "3": {
+        "title": "Intervention et résolution",
+        "description": "Mobilisez les ressources nécessaires et traitez le problème."
+      },
+      "4": {
+        "title": "Communication avec le citoyen",
+        "description": "Informez le citoyen de l'avancement et de la résolution de son alerte."
+      },
+      "5": {
+        "title": "Réception de l'alerte",
+        "description": "Dès qu'un citoyen signale une anomalie, elle est immédiatement visible dans votre espace de gestion."
+      },
+      "6": {
+        "title": "Examen et hiérarchisation",
+        "description": "Évaluez l'urgence et l'importance de l'alerte pour déterminer la priorité d'intervention."
+      },
+      "7": {
+        "title": "Orientation efficace",
+        "description": "D'un simple clic, orientez l'alerte vers le service adéquat."
+      },
+      "8": {
+        "title": "Organisation de l'intervention",
+        "description": "Mobilisez les moyens nécessaires pour traiter le problème."
+      },
+      "9": {
+        "title": "Information transparente",
+        "description": "Tenez le citoyen informé de l'avancement de la résolution de son alerte."
+      },
+      "10": {
+        "title": "Retour et clôture",
+        "description": "Une fois le problème résolu, actualisez le statut et fournissez un retour d'information."
+      },
+      "11": {
+        "title": "Étude des données",
+        "description": "Exploitez les renseignements recueillis pour améliorer en continu la gestion de la ville."
+      }
+    }
+  },
+  "button": {
+    "next": "Suivant",
+    "cancel": "Annuler",
+    "back": "Précédent",
+    "send": "Envoyer",
+    "validate": "Valider"
+  },
+  "tunnel": {
+    "receive": "Recevoir un",
+    "mail": "mail",
+    "phoneNumber": "N° téléphone",
+    "sms": "sms",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "featuresData": {
+    "title": "Fonctionnalités d'<colored>Evolios</colored>",
+    "description": "Découvrez comment Evolios révolutionne la gestion de votre entreprise avec des fonctionnalités innovantes et intuitives.",
+    "section1": {
+      "title": "Organisation",
+      "description": "Simplifiez la gestion de vos utilisateurs et de leurs accès grâce à des outils de gestion centralisés, garantissant une administration efficace et sécurisée.",
+      "items": {
+        "1":{
+              "contentTitle": "Gestion des comptes utilisateurs",
+              "contentDescription1": "Créez et gérez les comptes utilisateurs <br/> Attribuez des rôles spécifiques pour un accès sécurisé"
+            },
+        "2":{
+              "contentTitle": "Gestion de rôles",
+              "contentDescription1": "Deux rôles distincts : utilisateur avec accès complet et personnel sans accès"
+            },
+        "3":{
+              "contentTitle": "Édition des informations de base",
+              "contentDescription1": "Modifiez les informations de base des comptes utilisateurs"
+            },
+        "4":{
+              "contentTitle": "Modification du mot de passe",
+              "contentDescription1": "Changez les mots de passe rapidement pour assurer la sécurité des comptes"  
+            }
+      }
+    },
+    "section2": {
+      "title": "Gestion d'entreprise (interne)",
+      "description": "Optimisez la gestion de vos entreprises internes avec des options avancées d'assignation de comptes et de validation des informations légales, pour une administration sans faille.",
+      "items": {
+        "1":{
+              "contentTitle": "Assignation de compte utilisateur",
+              "contentDescription1": "Assignez des comptes utilisateurs spécifiques à chaque entreprise"
+            },
+        "2":{
+              "contentTitle": "Gestion des entreprises",
+              "contentDescription1": "Créez, éditez et supprimez des produits"
+            }
+      }
+    },
+    "section3": {
+      "title": "Produits",
+      "description": "Organisez et maintenez à jour votre catalogue de produits et catégories avec une interface intuitive qui facilite la recherche et la gestion des articles.",
+      "items": {
+        "1":{
+              "contentTitle": "Liste de produits",
+              "contentDescription1": "Consultez et recherchez facilement dans la liste de vos produits"
+            },
+        "2":{
+              "contentTitle": "Gestion des produits",
+              "contentDescription1": "Créez, éditez et supprimez des produits"
+            },
+        "3":{
+              "contentTitle": "Gestion des catégories",
+              "contentDescription1": "Organisez vos produits en créant, éditant et supprimant des catégories"
+            }
+      }
+    },
+    "section4": {
+      "title": "Devis",
+      "description": "Générez et gérez vos devis de manière flexible et rapide, avec des options d'édition avancées et une intégration fluide pour la transformation en factures.",
+      "items": {
+        "1":{
+              "contentTitle": "Gestion des factures",
+              "contentDescription1": "Créez de nouveaux devis ou dupliquez des devis existants"
+            },
+        "2":{
+              "contentTitle": "Édition",
+              "contentDescription1": "Ajoutez des produits, des sections, ajustez les quantités et réorganisez les éléments"
+            },
+        "3":{
+              "contentTitle": "Sélection",
+              "contentDescription1": "Associez le devis à une entreprise, un contact et une adresse"
+            },
+        "4":{
+              "contentTitle": "Calcul automatique de TVA",
+              "contentDescription1": "Simplifiez vos calculs avec une TVA automatiquement ajustée par groupe"
+            },
+        "5":{
+              "contentTitle": "Ajout de ristourne",
+              "contentDescription1": "Offrez des remises directement sur vos devis"
+            },
+        "6":{
+              "contentTitle": "Validation et transformation en facture",
+              "contentDescription1": "Validez vos devis pour les transformer en factures en un clic"
+            },
+        "7":{
+              "contentTitle": "Impression et envoi par email",
+              "contentDescription1": "Imprimez ou envoyez vos devis par email"
+            },
+        "8":{
+              "contentTitle": "Suppression de devis",
+              "contentDescription1": "Supprimez des devis non validés"
+            },
+        "9":{
+              "contentTitle": "Enregistrement automatique",
+              "contentDescription1": "Enregistrement automatique toutes les 3 minutes"
+            },
+        "10":{
+              "contentTitle": "Système de brouillon",
+              "contentDescription1": "Travaillez sur des brouillons de devis avant de les finaliser"
+            }
+      }
+    },
+    "section5": {
+      "title": "Factures",
+      "description": "Bénéficiez d'outils complets pour la création, la gestion et l'envoi de factures, incluant des fonctionnalités de suivi et de relance pour une gestion financière optimale.",
+      "items": {
+        "1":{
+              "contentTitle": "Gestion des factures",
+              "contentDescription1": "Fonctionnalités avancées identiques aux devis"
+            },
+        "2":{
+              "contentTitle": "Suppression des brouillons",
+              "contentDescription1": "Supprimez facilement les brouillons de factures"
+            },
+        "3":{
+              "contentTitle": "Bouton de relance manuel",
+              "contentDescription1": "Relancez vos clients pour les paiements"
+            },
+        "4":{
+              "contentTitle": "Création d'avoir",
+              "contentDescription1": "Créez des avoirs pour les factures en cas de besoin"  
+            }
+        }
+      },
+    "section6": {
+      "title": "Entreprises clientes",
+      "description": "Gérez efficacement les informations de vos clients, de leurs contacts à leurs adresses, tout en maintenant un suivi détaillé de leurs devis et factures.",
+      "items":  {
+        "1":{
+              "contentTitle": "Gestion des entreprises clientes",
+              "contentDescription1": "Créez, éditez et supprimez les fiches entreprises"
+            },
+        "2":{
+              "contentTitle": "Gestion des contacts",
+              "contentDescription1": "Ajoutez, modifiez ou supprimez des contacts associés à chaque entreprise"
+            },
+        "3":{
+              "contentTitle": "Gestion des adresses",
+              "contentDescription1": "Gérez facilement les adresses de vos entreprises clientes"
+            },
+        "4":{
+              "contentTitle": "Contact principal",
+              "contentDescription1": "Désignez un contact principal pour chaque entreprise"  
+            },
+        "5":{
+              "contentTitle": "Gestion de la TVA et SIRET",
+              "contentDescription1": "Maintenez à jour les informations fiscales et légales"  
+            },
+        "6":{
+              "contentTitle": "Visualisation des devis et factures",
+              "contentDescription1": "Consultez rapidement tous les devis et factures associés à une entreprise cliente"  
+            }
+        }
+      }
+    },
+  "featuresDataHomePage": {
+    "title": "Fonctionnalités d'<colored>Evolios</colored>",
+    "description": "Découvrez comment Evolios révolutionne la gestion de votre entreprise avec des fonctionnalités innovantes et intuitives.",
+    "items": {
+      "1":{
+            "title": "Organisation",
+            "description": "Gérez les accès, modifiez les informations et les mots de passe facilement."
+          },
+      "2":{
+            "title": "Gestion d'Entreprise",
+            "description": "Administrez vos entreprises et validez les SIRET avec efficacité."
+          },
+      "3":{
+            "title": "Produits",
+            "description": "Créez, éditez, et organisez vos produits et catégories sans effort."
+          },
+      "4":{
+            "title": "Devis & Factures",
+            "description": "Créez, éditez, et transformez devis en factures rapidement avec des fonctionnalités avancées."  
+          }
+    }
+  }
+}
