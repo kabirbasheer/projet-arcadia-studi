@@ -1,72 +1,75 @@
-'use client'; // Ajouter cette directive au début du fichier
+'use client';
 
 import { Navbar as FlowbiteNavbar } from 'flowbite-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { HiMenu, HiOutlineX } from 'react-icons/hi';
 
 import { Logo } from '@/components/atoms/Logo';
-import { Button } from '@/components/molecules/Button';
+import { Typography } from '@/components/atoms/Typography/Typography';
 
 import { customNavbarTheme } from './theme';
-import { Typography } from '@/components/atoms/Typography/Typography';
+import { Button } from '@/components/molecules/Button/Button';
 
 export const NavbarMobile = () => {
   const pathname = usePathname();
-  const [shadow, setShadow] = useState<number>(0);
-  const scrollThreshold = 20;
-
-  const navbarList = [
-    {name: 'Accueil', link: '/',},
-    {name: 'Services du Zoo', link: '/Services',},
-    {name: 'Les habitats', link: '/Habitats',},
-    {name: 'Contactez-nous', link: '/Contact',},
-  ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShadow(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-
   const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <FlowbiteNavbar
-      theme={customNavbarTheme(undefined)}
-      // className={`transition-shadow duration-300 ${shadow > scrollThreshold ? 'shadow-[0_0px_5px_2px_rgba(212,212,212,1)]' : ''}`}
-    >
-      {/* <Logo />
-      <div onClick={() => setIsOpen(!isOpen)}>
-        <FlowbiteNavbar.Toggle barIcon={isOpen ? HiOutlineX : HiMenu} />
-      </div> */}
-      <FlowbiteNavbar.Brand>
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-primary-500">Flowbite React</span>
-      </FlowbiteNavbar.Brand>
+  const navbarList = [
+    { name: 'Accueil', link: '/' },
+    { name: 'Services du Zoo', link: '/Services' },
+    { name: 'Les habitats', link: '/Habitats' },
+    { name: 'Contactez-nous', link: '/Contact' },
+    { name: 'Horaires', link: '/#horaires' }, // Lien vers l'ancre "Horaires"
+  ];
 
-      <FlowbiteNavbar.Toggle />
-      <FlowbiteNavbar.Collapse>
+  const handleToggle = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <FlowbiteNavbar theme={customNavbarTheme(undefined)}>
+      <div className="flex lg:items-center justify-between w-full">
+        <Logo />
+
+        {/* Custom Toggle Button */}
+        <button
+          className="text-primary-500 p-2 rounded-md focus:outline-none lg:hidden"
+          onClick={handleToggle}
+          aria-expanded={isOpen}
+          aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+        >
+          {isOpen ? <HiOutlineX className="h-10 w-10" /> : <HiMenu className="h-10 w-10" />}
+        </button>
+      </div>
+
+      {/* Collapse (menu) */}
+      <FlowbiteNavbar.Collapse className={`${isOpen ? 'block' : 'hidden'} lg:block`}>
         {navbarList.map((page) => (
           <FlowbiteNavbar.Link
             as={Link}
             key={page.link}
             href={page.link}
+            onClick={handleCloseMenu} // Fermer le menu lorsque l'utilisateur clique sur un lien
           >
-            <Typography customClassName={`hover:border-primary-400 hover:border-b-2  text-base ${pathname === page.link ? 'border-b-2 border-primary-700' : ''}`} color="dark">
+            <Typography
+              customClassName={`hover:border-primary-400 w-fit hover:border-b-2 text-base ${
+                pathname === page.link ? 'border-b-2 border-primary-700 w-fit' : ''
+              }`}
+              color="dark"
+            >
               {page.name}
-              </Typography>
+            </Typography>
           </FlowbiteNavbar.Link>
         ))}
-          {/* <Button size="s" color="primary" href='/connexion'>
+          <Button size="l" color="primary" href='/connexion'>
             Connexion
-          </Button> */}
+          </Button>
       </FlowbiteNavbar.Collapse>
     </FlowbiteNavbar>
   );

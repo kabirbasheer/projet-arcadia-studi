@@ -12,28 +12,25 @@ type ButtonProps = {
   size?: ButtonSize;
   href?: string;
 } & React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  as?: React.ElementType;  // Ajout de la prop 'as' dynamique
+  as?: React.ElementType;
 };
 
 export const Button = React.forwardRef<HTMLElement, ButtonProps>(
   ({ children, className, color = 'primary', variant, size = 's', type = 'button', href, as = 'button', ...props }, ref) => {
-    // Déterminer l'élément à rendre en fonction de la prop 'as'
     let Component = as;
 
-    // Si 'href' est défini, utiliser Link pour une URL interne ou 'a' pour un lien externe
     if (href) {
       Component = href.startsWith('/') ? Link : 'a';
     }
 
-    // Appliquer dynamiquement les classes et autres props
     return (
       <Component
         ref={ref}
         type={type}
-        href={href} // Passe l'attribut href si nécessaire
+        href={href}
         className={clsxm(
           'flex items-center justify-center gap-2 rounded-md text-base focus:outline-none focus-visible:ring focus-visible:ring-primary-500 hover:bg-primary-500',
-          className, // Les classes passées en props
+          className,
           //*=========== Size ===========
           [
             size === 's' && 'w-[120px] h-9',
@@ -42,8 +39,8 @@ export const Button = React.forwardRef<HTMLElement, ButtonProps>(
           ],
           //*=========== Colors ===========
           [
-            color === 'primary' && 'bg-primary-500 hover:bg-primary-600 disabled:bg-gray-200 focus:ring-transparent enabled:hover:bg-primary-500',
-            color === 'secondary' && 'bg-secondary-700 text-white hover:border-secondary-700 hover:border-2 shadow-none hover:bg-secondary-50 hover:text-secondary-700 disabled:bg-gray-200 focus:ring-transparent enabled:hover:bg-transparent'
+            color === 'primary' && 'bg-primary-500 hover:bg-primary-600',
+            color === 'secondary' && 'bg-secondary-950 border-2 border-secondary-700 hover:bg-secondary-700 hover:border-none',
           ],
           //*=========== Variants ===========
           [
