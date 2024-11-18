@@ -9,7 +9,7 @@ export interface LogoProps {
 
 export const Logo = ({
   redirectUrl = '/',
-  src = '/images/arcadia-logo-2.webp', // Chemin relatif à partir de "public"
+  src = '/images/arcadia-logo-2.webp',
 }: LogoProps) => {
   return (
     <Link href={redirectUrl}>

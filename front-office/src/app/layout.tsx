@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Footer } from "@/components/organisms/Footer/Footer";
-import { Navbar } from "@/components/organisms/Navbar/Navbar";
 import { NavbarResponsive } from "@/components/organisms/Navbar/NavbarResponsive";
 
 
@@ -35,9 +34,10 @@ export default function RootLayout({
       >
 
       <div className="sticky top-0 z-[400]"><NavbarResponsive /></div>
-          {children}
 
-      <div><Footer /></div>
+      {children}
+
+      <Footer />
 
       </body>
     </html>

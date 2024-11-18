@@ -12,7 +12,7 @@ export const customNavbarTheme = (isOpen: boolean | undefined): FlowbiteNavbarTh
       off: ''
     },
     inner: {
-      base: 'w-full flex justify-between items-center',
+      base: 'w-full flex justify-between items-center lg:flex-row flex-wrap p-5 lg:p-0',
       fluid: {
         on: '',
         off: ''
@@ -24,7 +24,7 @@ export const customNavbarTheme = (isOpen: boolean | undefined): FlowbiteNavbarTh
   },
   collapse: {
     base: 'w-full lg:block lg:w-auto h-screen lg:h-auto mt-16 lg:mt-0',
-    list: 'flex flex-col lg:flex-row lg:space-x-8 lg:font-medium lg:items-center gap-y-10 lg:gap-y-0',
+    list: 'flex flex-col justify-start lg:flex-row lg:space-x-8 lg:font-medium lg:items-center gap-y-10 lg:gap-y-0',
     hidden: {
       on: 'hidden',
       off: ''
@@ -42,7 +42,7 @@ export const customNavbarTheme = (isOpen: boolean | undefined): FlowbiteNavbarTh
     }
   },
   toggle: {
-    base: `text-primary-500 rounded-[10px] lg:hidden ${isOpen === true ? 'bg-primary-100' : 'bg-transparent'}`, // Clean base styles for the toggle
-    icon: 'h-[42px] w-[42px] shrink-0' // Icon only, no extra styles or content
+    base: 'text-primary-500 rounded-[10px]',
+    icon: 'h-[42px] w-[42px] shrink-0'
   }
 });

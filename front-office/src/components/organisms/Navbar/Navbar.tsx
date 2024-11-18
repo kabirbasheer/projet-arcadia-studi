@@ -17,10 +17,11 @@ export const Navbar = () => {
   const scrollThreshold = 50;
 
   const navbarList = [
-    {name: 'Accueil', link: '/',},
-    {name: 'Services du Zoo', link: '/Services',},
-    {name: 'Les habitats', link: '/Habitats',},
-    {name: 'Contactez-nous', link: '/Contact',},
+    { name: 'Accueil', link: '/',},
+    { name: 'Services du Zoo', link: '/Services',},
+    { name: 'Les habitats', link: '/Habitats',},
+    { name: 'Contactez-nous', link: '/Contact',},
+    { name: 'Horaires', link: '/#horaires' },
 ];
 
 useEffect(() => {
@@ -40,7 +41,6 @@ useEffect(() => {
       theme={customNavbarTheme(undefined)}
       className={`transition-shadow duration-300 ${shadow > scrollThreshold ? 'shadow-[0_0px_5px_2px_rgba(212,212,212,1)]' : ''}`}
     >
-      {/* <div className='w-[120px]'><Logo /></div> */}
       <Logo />
       <FlowbiteNavbar.Collapse>
         <div className="flex flex-row gap-x-16">
