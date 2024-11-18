@@ -12,11 +12,24 @@ type ButtonProps = {
   size?: ButtonSize;
   href?: string;
 } & React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  as?: React.ElementType;
-};
+    as?: React.ElementType;
+  };
 
 export const Button = React.forwardRef<HTMLElement, ButtonProps>(
-  ({ children, className, color = 'primary', variant, size = 's', type = 'button', href, as = 'button', ...props }, ref) => {
+  (
+    {
+      children,
+      className,
+      color = 'primary',
+      variant,
+      size = 's',
+      type = 'button',
+      href,
+      as = 'button',
+      ...props
+    },
+    ref,
+  ) => {
     let Component = as;
 
     if (href) {
@@ -35,26 +48,30 @@ export const Button = React.forwardRef<HTMLElement, ButtonProps>(
           [
             size === 's' && 'w-[120px] h-9',
             size === 'm' && 'w-[270px] h-11',
-            size === 'l' && 'w-full h-11'
+            size === 'l' && 'w-full h-11',
           ],
           //*=========== Colors ===========
           [
             color === 'primary' && 'bg-primary-500 hover:bg-primary-600',
-            color === 'secondary' && 'bg-secondary-950 border-2 border-secondary-700 hover:bg-secondary-700 hover:border-none',
+            color === 'secondary' &&
+              'bg-secondary-950 border-2 border-secondary-700 hover:bg-secondary-700 hover:border-none',
           ],
           //*=========== Variants ===========
           [
-            variant === 'transparent' && 'bg-transparent enabled:hover:bg-transparent',
-            variant === 'underline' && 'bg-transparent underline enabled:hover:bg-transparent',
-            variant === 'outline' && 'bg-white enabled:hover:bg-white border border-primary-500 justify-center hover:shadow-sm'
-          ]
+            variant === 'transparent' &&
+              'bg-transparent enabled:hover:bg-transparent',
+            variant === 'underline' &&
+              'bg-transparent underline enabled:hover:bg-transparent',
+            variant === 'outline' &&
+              'bg-white enabled:hover:bg-white border border-primary-500 justify-center hover:shadow-sm',
+          ],
         )}
         {...props}
       >
         {children}
       </Component>
     );
-  }
+  },
 );
 
 Button.displayName = 'Button';

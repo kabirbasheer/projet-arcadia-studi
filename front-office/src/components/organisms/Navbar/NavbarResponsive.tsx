@@ -1,8 +1,8 @@
 'use client';
 
-import { DeviceSize, useResponsive } from "@/hooks/useResponsive";
-import { NavbarMobile } from "./NavbarMobile";
-import { Navbar } from "./Navbar";
+import { DeviceSize, useResponsive } from '@/hooks/useResponsive';
+import { NavbarMobile } from './NavbarMobile';
+import { Navbar } from './Navbar';
 
 export const NavbarResponsive = () => {
   const { deviceSize } = useResponsive();

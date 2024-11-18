@@ -1,48 +1,50 @@
 import { FlowbiteNavbarTheme } from 'flowbite-react';
 
-export const customNavbarTheme = (isOpen: boolean | undefined): FlowbiteNavbarTheme => ({
+export const customNavbarTheme = (
+  isOpen: boolean | undefined,
+): FlowbiteNavbarTheme => ({
   root: {
     base: 'px-4 w-full bg-secondary-50 flex flex-row justify-center',
     rounded: {
       on: 'rounded',
-      off: ''
+      off: '',
     },
     bordered: {
       on: '',
-      off: ''
+      off: '',
     },
     inner: {
       base: 'w-full flex justify-between items-center lg:flex-row flex-wrap p-5 lg:p-0',
       fluid: {
         on: '',
-        off: ''
-      }
-    }
+        off: '',
+      },
+    },
   },
   brand: {
-    base: ''
+    base: '',
   },
   collapse: {
     base: 'w-full lg:block lg:w-auto h-screen lg:h-auto mt-16 lg:mt-0',
     list: 'flex flex-col justify-start lg:flex-row lg:space-x-8 lg:font-medium lg:items-center gap-y-10 lg:gap-y-0',
     hidden: {
       on: 'hidden',
-      off: ''
-    }
+      off: '',
+    },
   },
   link: {
     base: 'hover:text-secondary-700 hover:border-b-2',
     active: {
       on: '',
-      off: ''
+      off: '',
     },
     disabled: {
       on: '',
-      off: ''
-    }
+      off: '',
+    },
   },
   toggle: {
     base: 'text-primary-500 rounded-[10px]',
-    icon: 'h-[42px] w-[42px] shrink-0'
-  }
+    icon: 'h-[42px] w-[42px] shrink-0',
+  },
 });

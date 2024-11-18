@@ -1,4 +1,3 @@
-
 ---
 
 ## Frontend
@@ -23,6 +22,7 @@ Depuis le dossier `frontend`, vous pouvez exécuter :
 ## Backend (à venir)
 
 Le backend sera construit avec :
+
 - Node.js
 - TypeScript
 - Express.js
@@ -36,3 +36,4 @@ Le backend sera construit avec :
    ```bash
    git clone https://github.com/votre-utilisateur/arcadia-v1.git
    cd arcadia-v1
+   ```
