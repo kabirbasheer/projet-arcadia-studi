@@ -1,4 +1,13 @@
-export type HTMLTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'div';
+export type HTMLTag =
+  | 'h1'
+  | 'h2'
+  | 'h3'
+  | 'h4'
+  | 'h5'
+  | 'h6'
+  | 'p'
+  | 'span'
+  | 'div';
 
 export type TextAlign = 'left' | 'center' | 'right' | 'justify';
 
@@ -24,7 +33,13 @@ export type VariantType =
 
 export type TextTransform = 'capitalize' | 'lowercase' | 'uppercase';
 
-export type FontWeight = 'light' | 'regular' | 'medium' | 'semibold' | 'bold' | 'extrabold';
+export type FontWeight =
+  | 'light'
+  | 'regular'
+  | 'medium'
+  | 'semibold'
+  | 'bold'
+  | 'extrabold';
 
 export type FontFamily = 'primary' | 'secondary';
 
@@ -42,4 +57,10 @@ export type TextColor =
   | 'red'
   | 'dark';
 
-export type Gradiant = 'primary' | 'secondary' | 'tertiary' | 'quatro' | 'cinquo' | 'star';
+export type Gradiant =
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'quatro'
+  | 'cinquo'
+  | 'star';

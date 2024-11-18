@@ -17,9 +17,7 @@ const Header: React.FC<HeaderProps> = ({ title, buttonText }) => {
 
   const imageWidthSize = deviceSize <= DeviceSize.md ? 350 : 700;
 
-  return (
-      <Image src={header} alt="header image" width={imageWidthSize} />
-  );
+  return <Image src={header} alt="header image" width={imageWidthSize} />;
 };
 
 export default Header;

@@ -44,12 +44,18 @@ export const NavbarMobile = () => {
           aria-expanded={isOpen}
           aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
         >
-          {isOpen ? <HiOutlineX className="h-10 w-10" /> : <HiMenu className="h-10 w-10" />}
+          {isOpen ? (
+            <HiOutlineX className="h-10 w-10" />
+          ) : (
+            <HiMenu className="h-10 w-10" />
+          )}
         </button>
       </div>
 
       {/* Collapse (menu) */}
-      <FlowbiteNavbar.Collapse className={`${isOpen ? 'block' : 'hidden'} lg:block`}>
+      <FlowbiteNavbar.Collapse
+        className={`${isOpen ? 'block' : 'hidden'} lg:block`}
+      >
         {navbarList.map((page) => (
           <FlowbiteNavbar.Link
             as={Link}
@@ -59,7 +65,9 @@ export const NavbarMobile = () => {
           >
             <Typography
               customClassName={`hover:border-primary-400 w-fit hover:border-b-2 text-base ${
-                pathname === page.link ? 'border-b-2 border-primary-700 w-fit' : ''
+                pathname === page.link
+                  ? 'border-b-2 border-primary-700 w-fit'
+                  : ''
               }`}
               color="dark"
             >
@@ -67,9 +75,9 @@ export const NavbarMobile = () => {
             </Typography>
           </FlowbiteNavbar.Link>
         ))}
-          <Button size="l" color="primary" href='/connexion'>
-            Connexion
-          </Button>
+        <Button size="l" color="primary" href="/connexion">
+          Connexion
+        </Button>
       </FlowbiteNavbar.Collapse>
     </FlowbiteNavbar>
   );

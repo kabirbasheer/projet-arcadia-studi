@@ -210,9 +210,9 @@
     }
   },
   "price": {
-    "title" : "Choisissez Votre Plan",
-    "actionButton" : "Let’s Go",
-    "seePrice" : "Voir les tarifs",
+    "title": "Choisissez Votre Plan",
+    "actionButton": "Let’s Go",
+    "seePrice": "Voir les tarifs",
     "plan1": {
       "planLabel": "Basic",
       "priceLabel": "Gratuit",
@@ -400,175 +400,175 @@
       "title": "Organisation",
       "description": "Simplifiez la gestion de vos utilisateurs et de leurs accès grâce à des outils de gestion centralisés, garantissant une administration efficace et sécurisée.",
       "items": {
-        "1":{
-              "contentTitle": "Gestion des comptes utilisateurs",
-              "contentDescription1": "Créez et gérez les comptes utilisateurs <br/> Attribuez des rôles spécifiques pour un accès sécurisé"
-            },
-        "2":{
-              "contentTitle": "Gestion de rôles",
-              "contentDescription1": "Deux rôles distincts : utilisateur avec accès complet et personnel sans accès"
-            },
-        "3":{
-              "contentTitle": "Édition des informations de base",
-              "contentDescription1": "Modifiez les informations de base des comptes utilisateurs"
-            },
-        "4":{
-              "contentTitle": "Modification du mot de passe",
-              "contentDescription1": "Changez les mots de passe rapidement pour assurer la sécurité des comptes"  
-            }
+        "1": {
+          "contentTitle": "Gestion des comptes utilisateurs",
+          "contentDescription1": "Créez et gérez les comptes utilisateurs <br/> Attribuez des rôles spécifiques pour un accès sécurisé"
+        },
+        "2": {
+          "contentTitle": "Gestion de rôles",
+          "contentDescription1": "Deux rôles distincts : utilisateur avec accès complet et personnel sans accès"
+        },
+        "3": {
+          "contentTitle": "Édition des informations de base",
+          "contentDescription1": "Modifiez les informations de base des comptes utilisateurs"
+        },
+        "4": {
+          "contentTitle": "Modification du mot de passe",
+          "contentDescription1": "Changez les mots de passe rapidement pour assurer la sécurité des comptes"
+        }
       }
     },
     "section2": {
       "title": "Gestion d'entreprise (interne)",
       "description": "Optimisez la gestion de vos entreprises internes avec des options avancées d'assignation de comptes et de validation des informations légales, pour une administration sans faille.",
       "items": {
-        "1":{
-              "contentTitle": "Assignation de compte utilisateur",
-              "contentDescription1": "Assignez des comptes utilisateurs spécifiques à chaque entreprise"
-            },
-        "2":{
-              "contentTitle": "Gestion des entreprises",
-              "contentDescription1": "Créez, éditez et supprimez des produits"
-            }
+        "1": {
+          "contentTitle": "Assignation de compte utilisateur",
+          "contentDescription1": "Assignez des comptes utilisateurs spécifiques à chaque entreprise"
+        },
+        "2": {
+          "contentTitle": "Gestion des entreprises",
+          "contentDescription1": "Créez, éditez et supprimez des produits"
+        }
       }
     },
     "section3": {
       "title": "Produits",
       "description": "Organisez et maintenez à jour votre catalogue de produits et catégories avec une interface intuitive qui facilite la recherche et la gestion des articles.",
       "items": {
-        "1":{
-              "contentTitle": "Liste de produits",
-              "contentDescription1": "Consultez et recherchez facilement dans la liste de vos produits"
-            },
-        "2":{
-              "contentTitle": "Gestion des produits",
-              "contentDescription1": "Créez, éditez et supprimez des produits"
-            },
-        "3":{
-              "contentTitle": "Gestion des catégories",
-              "contentDescription1": "Organisez vos produits en créant, éditant et supprimant des catégories"
-            }
+        "1": {
+          "contentTitle": "Liste de produits",
+          "contentDescription1": "Consultez et recherchez facilement dans la liste de vos produits"
+        },
+        "2": {
+          "contentTitle": "Gestion des produits",
+          "contentDescription1": "Créez, éditez et supprimez des produits"
+        },
+        "3": {
+          "contentTitle": "Gestion des catégories",
+          "contentDescription1": "Organisez vos produits en créant, éditant et supprimant des catégories"
+        }
       }
     },
     "section4": {
       "title": "Devis",
       "description": "Générez et gérez vos devis de manière flexible et rapide, avec des options d'édition avancées et une intégration fluide pour la transformation en factures.",
       "items": {
-        "1":{
-              "contentTitle": "Gestion des factures",
-              "contentDescription1": "Créez de nouveaux devis ou dupliquez des devis existants"
-            },
-        "2":{
-              "contentTitle": "Édition",
-              "contentDescription1": "Ajoutez des produits, des sections, ajustez les quantités et réorganisez les éléments"
-            },
-        "3":{
-              "contentTitle": "Sélection",
-              "contentDescription1": "Associez le devis à une entreprise, un contact et une adresse"
-            },
-        "4":{
-              "contentTitle": "Calcul automatique de TVA",
-              "contentDescription1": "Simplifiez vos calculs avec une TVA automatiquement ajustée par groupe"
-            },
-        "5":{
-              "contentTitle": "Ajout de ristourne",
-              "contentDescription1": "Offrez des remises directement sur vos devis"
-            },
-        "6":{
-              "contentTitle": "Validation et transformation en facture",
-              "contentDescription1": "Validez vos devis pour les transformer en factures en un clic"
-            },
-        "7":{
-              "contentTitle": "Impression et envoi par email",
-              "contentDescription1": "Imprimez ou envoyez vos devis par email"
-            },
-        "8":{
-              "contentTitle": "Suppression de devis",
-              "contentDescription1": "Supprimez des devis non validés"
-            },
-        "9":{
-              "contentTitle": "Enregistrement automatique",
-              "contentDescription1": "Enregistrement automatique toutes les 3 minutes"
-            },
-        "10":{
-              "contentTitle": "Système de brouillon",
-              "contentDescription1": "Travaillez sur des brouillons de devis avant de les finaliser"
-            }
+        "1": {
+          "contentTitle": "Gestion des factures",
+          "contentDescription1": "Créez de nouveaux devis ou dupliquez des devis existants"
+        },
+        "2": {
+          "contentTitle": "Édition",
+          "contentDescription1": "Ajoutez des produits, des sections, ajustez les quantités et réorganisez les éléments"
+        },
+        "3": {
+          "contentTitle": "Sélection",
+          "contentDescription1": "Associez le devis à une entreprise, un contact et une adresse"
+        },
+        "4": {
+          "contentTitle": "Calcul automatique de TVA",
+          "contentDescription1": "Simplifiez vos calculs avec une TVA automatiquement ajustée par groupe"
+        },
+        "5": {
+          "contentTitle": "Ajout de ristourne",
+          "contentDescription1": "Offrez des remises directement sur vos devis"
+        },
+        "6": {
+          "contentTitle": "Validation et transformation en facture",
+          "contentDescription1": "Validez vos devis pour les transformer en factures en un clic"
+        },
+        "7": {
+          "contentTitle": "Impression et envoi par email",
+          "contentDescription1": "Imprimez ou envoyez vos devis par email"
+        },
+        "8": {
+          "contentTitle": "Suppression de devis",
+          "contentDescription1": "Supprimez des devis non validés"
+        },
+        "9": {
+          "contentTitle": "Enregistrement automatique",
+          "contentDescription1": "Enregistrement automatique toutes les 3 minutes"
+        },
+        "10": {
+          "contentTitle": "Système de brouillon",
+          "contentDescription1": "Travaillez sur des brouillons de devis avant de les finaliser"
+        }
       }
     },
     "section5": {
       "title": "Factures",
       "description": "Bénéficiez d'outils complets pour la création, la gestion et l'envoi de factures, incluant des fonctionnalités de suivi et de relance pour une gestion financière optimale.",
       "items": {
-        "1":{
-              "contentTitle": "Gestion des factures",
-              "contentDescription1": "Fonctionnalités avancées identiques aux devis"
-            },
-        "2":{
-              "contentTitle": "Suppression des brouillons",
-              "contentDescription1": "Supprimez facilement les brouillons de factures"
-            },
-        "3":{
-              "contentTitle": "Bouton de relance manuel",
-              "contentDescription1": "Relancez vos clients pour les paiements"
-            },
-        "4":{
-              "contentTitle": "Création d'avoir",
-              "contentDescription1": "Créez des avoirs pour les factures en cas de besoin"  
-            }
-        }
-      },
-    "section6": {
-      "title": "Entreprises clientes",
-      "description": "Gérez efficacement les informations de vos clients, de leurs contacts à leurs adresses, tout en maintenant un suivi détaillé de leurs devis et factures.",
-      "items":  {
-        "1":{
-              "contentTitle": "Gestion des entreprises clientes",
-              "contentDescription1": "Créez, éditez et supprimez les fiches entreprises"
-            },
-        "2":{
-              "contentTitle": "Gestion des contacts",
-              "contentDescription1": "Ajoutez, modifiez ou supprimez des contacts associés à chaque entreprise"
-            },
-        "3":{
-              "contentTitle": "Gestion des adresses",
-              "contentDescription1": "Gérez facilement les adresses de vos entreprises clientes"
-            },
-        "4":{
-              "contentTitle": "Contact principal",
-              "contentDescription1": "Désignez un contact principal pour chaque entreprise"  
-            },
-        "5":{
-              "contentTitle": "Gestion de la TVA et SIRET",
-              "contentDescription1": "Maintenez à jour les informations fiscales et légales"  
-            },
-        "6":{
-              "contentTitle": "Visualisation des devis et factures",
-              "contentDescription1": "Consultez rapidement tous les devis et factures associés à une entreprise cliente"  
-            }
+        "1": {
+          "contentTitle": "Gestion des factures",
+          "contentDescription1": "Fonctionnalités avancées identiques aux devis"
+        },
+        "2": {
+          "contentTitle": "Suppression des brouillons",
+          "contentDescription1": "Supprimez facilement les brouillons de factures"
+        },
+        "3": {
+          "contentTitle": "Bouton de relance manuel",
+          "contentDescription1": "Relancez vos clients pour les paiements"
+        },
+        "4": {
+          "contentTitle": "Création d'avoir",
+          "contentDescription1": "Créez des avoirs pour les factures en cas de besoin"
         }
       }
     },
+    "section6": {
+      "title": "Entreprises clientes",
+      "description": "Gérez efficacement les informations de vos clients, de leurs contacts à leurs adresses, tout en maintenant un suivi détaillé de leurs devis et factures.",
+      "items": {
+        "1": {
+          "contentTitle": "Gestion des entreprises clientes",
+          "contentDescription1": "Créez, éditez et supprimez les fiches entreprises"
+        },
+        "2": {
+          "contentTitle": "Gestion des contacts",
+          "contentDescription1": "Ajoutez, modifiez ou supprimez des contacts associés à chaque entreprise"
+        },
+        "3": {
+          "contentTitle": "Gestion des adresses",
+          "contentDescription1": "Gérez facilement les adresses de vos entreprises clientes"
+        },
+        "4": {
+          "contentTitle": "Contact principal",
+          "contentDescription1": "Désignez un contact principal pour chaque entreprise"
+        },
+        "5": {
+          "contentTitle": "Gestion de la TVA et SIRET",
+          "contentDescription1": "Maintenez à jour les informations fiscales et légales"
+        },
+        "6": {
+          "contentTitle": "Visualisation des devis et factures",
+          "contentDescription1": "Consultez rapidement tous les devis et factures associés à une entreprise cliente"
+        }
+      }
+    }
+  },
   "featuresDataHomePage": {
     "title": "Fonctionnalités d'<colored>Evolios</colored>",
     "description": "Découvrez comment Evolios révolutionne la gestion de votre entreprise avec des fonctionnalités innovantes et intuitives.",
     "items": {
-      "1":{
-            "title": "Organisation",
-            "description": "Gérez les accès, modifiez les informations et les mots de passe facilement."
-          },
-      "2":{
-            "title": "Gestion d'Entreprise",
-            "description": "Administrez vos entreprises et validez les SIRET avec efficacité."
-          },
-      "3":{
-            "title": "Produits",
-            "description": "Créez, éditez, et organisez vos produits et catégories sans effort."
-          },
-      "4":{
-            "title": "Devis & Factures",
-            "description": "Créez, éditez, et transformez devis en factures rapidement avec des fonctionnalités avancées."  
-          }
+      "1": {
+        "title": "Organisation",
+        "description": "Gérez les accès, modifiez les informations et les mots de passe facilement."
+      },
+      "2": {
+        "title": "Gestion d'Entreprise",
+        "description": "Administrez vos entreprises et validez les SIRET avec efficacité."
+      },
+      "3": {
+        "title": "Produits",
+        "description": "Créez, éditez, et organisez vos produits et catégories sans effort."
+      },
+      "4": {
+        "title": "Devis & Factures",
+        "description": "Créez, éditez, et transformez devis en factures rapidement avec des fonctionnalités avancées."
+      }
     }
   }
 }

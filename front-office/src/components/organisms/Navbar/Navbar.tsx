@@ -17,24 +17,23 @@ export const Navbar = () => {
   const scrollThreshold = 50;
 
   const navbarList = [
-    { name: 'Accueil', link: '/',},
-    { name: 'Services du Zoo', link: '/Services',},
-    { name: 'Les habitats', link: '/Habitats',},
-    { name: 'Contactez-nous', link: '/Contact',},
+    { name: 'Accueil', link: '/' },
+    { name: 'Services du Zoo', link: '/Services' },
+    { name: 'Les habitats', link: '/Habitats' },
+    { name: 'Contactez-nous', link: '/Contact' },
     { name: 'Horaires', link: '/#horaires' },
-];
+  ];
 
-useEffect(() => {
-  const handleScroll = () => {
-    setShadow(window.scrollY);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setShadow(window.scrollY);
+    };
 
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
-
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <FlowbiteNavbar
@@ -46,16 +45,19 @@ useEffect(() => {
         <div className="flex flex-row gap-x-16">
           {navbarList.map((page) => (
             <FlowbiteNavbar.Link as={Link} href={page.link} key={page.name}>
-              <Typography customClassName={`hover:border-primary-400 hover:border-b-2  text-base ${pathname === page.link ? 'border-b-2 border-primary-700' : ''}`} color="dark">
+              <Typography
+                customClassName={`hover:border-primary-400 hover:border-b-2  text-base ${pathname === page.link ? 'border-b-2 border-primary-700' : ''}`}
+                color="dark"
+              >
                 {page.name}
               </Typography>
             </FlowbiteNavbar.Link>
           ))}
         </div>
       </FlowbiteNavbar.Collapse>
-          <Button size="s" color="primary" href='/connexion'>
-          Connexion
-          </Button>
+      <Button size="s" color="primary" href="/connexion">
+        Connexion
+      </Button>
     </FlowbiteNavbar>
   );
 };

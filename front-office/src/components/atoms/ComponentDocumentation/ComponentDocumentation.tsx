@@ -13,7 +13,9 @@ export const ComponentDocumentation = ({ children, title }: Props) => {
       <Typography variant="cardTitle" color="primary">
         {title}
       </Typography>
-      <div className="rounded-sm border-2 border-primary-300 p-3">{children}</div>
+      <div className="rounded-sm border-2 border-primary-300 p-3">
+        {children}
+      </div>
     </>
   );
 };
