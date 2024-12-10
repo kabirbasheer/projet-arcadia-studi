@@ -18,7 +18,7 @@ export const NavbarMobile = () => {
 
   const navbarList = [
     { name: 'Accueil', link: '/' },
-    { name: 'Services du Zoo', link: '/Services' },
+    { name: 'Services', link: '/services' },
     { name: 'Les habitats', link: '/Habitats' },
     { name: 'Contactez-nous', link: '/Contact' },
     { name: 'Horaires', link: '/#horaires' }, // Lien vers l'ancre "Horaires"

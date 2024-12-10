@@ -144,7 +144,7 @@ export const Typography = ({
         ],
         [
           color === 'primary' && 'text-primary-500',
-          color === 'secondary' && 'text-secondary-500',
+          color === 'secondary' && 'text-secondary-100',
           color === 'gray' && 'text-gray-700',
           color === 'darkGray' && 'text-[#6D6D88]',
           color === 'lightGray' && 'text-[#9393A8]',

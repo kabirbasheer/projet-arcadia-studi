@@ -61,7 +61,7 @@ export const Button = React.forwardRef<HTMLElement, ButtonProps>(
             variant === 'transparent' &&
               'bg-transparent enabled:hover:bg-transparent',
             variant === 'underline' &&
-              'bg-transparent underline enabled:hover:bg-transparent',
+              'bg-transparent underline underline-offset-4 decoration-primary-500 hover:decoration-primary-600 enabled:hover:bg-transparent',
             variant === 'outline' &&
               'bg-white enabled:hover:bg-white border border-primary-500 justify-center hover:shadow-sm',
           ],

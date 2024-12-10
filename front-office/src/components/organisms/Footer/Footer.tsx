@@ -24,7 +24,7 @@ export const Footer = () => {
 
   const aboutList = [
     { name: 'Accueil', link: '/' },
-    { name: 'Services du Zoo', link: '/Services' },
+    { name: 'Services', link: '/Services' },
     { name: 'Les habitats', link: '/Habitats' },
     { name: 'Contactez-nous', link: '/Contact' },
     { name: 'Horaires', link: '/#horaires' },
