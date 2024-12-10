@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   const navbarList = [
     { name: 'Accueil', link: '/' },
-    { name: 'Services du Zoo', link: '/Services' },
+    { name: 'Services', link: '/services' },
     { name: 'Les habitats', link: '/Habitats' },
     { name: 'Contactez-nous', link: '/Contact' },
     { name: 'Horaires', link: '/#horaires' },
@@ -38,7 +38,7 @@ export const Navbar = () => {
   return (
     <FlowbiteNavbar
       theme={customNavbarTheme(undefined)}
-      className={`transition-shadow duration-300 ${shadow > scrollThreshold ? 'shadow-[0_0px_5px_2px_rgba(212,212,212,1)]' : ''}`}
+      className={`transition-shadow duration-300 ${shadow > scrollThreshold ? 'shadow-[0_0px_5px_5px_rgba(212,212,212,1)]' : ''}`}
     >
       <Logo />
       <FlowbiteNavbar.Collapse>

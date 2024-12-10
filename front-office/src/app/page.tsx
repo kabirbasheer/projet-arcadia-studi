@@ -6,6 +6,9 @@ import { CardItem } from '@/components/organisms/cardItem/cardItem';
 import { useRouter } from 'next/navigation';
 import { CardSchedule } from '@/components/organisms/cardSchedule';
 import { Typography } from '@/components/atoms/Typography';
+import { CardReview } from '@/components/organisms/cardReview';
+import { CardHomepage } from '@/components/organisms/cardHomepage/cardHomepage';
+import { Card } from '@/components/molecules/Card/card';
 
 export default function Home() {
   const router = useRouter();
@@ -20,88 +23,97 @@ export default function Home() {
     { day: 'Dimanche :', time: '9h à 23h' },
   ];
 
-  const cardData = [
-    {
-      title: 'Services',
-      description:
-        'Découvrez tous les services proposés par notre zoo, y compris la restauration et les visites guidées.',
-      imgSrc: '/images/carousel-1.webp',
-      buttonText: 'Voir les services',
-      link: '/services',
-    },
-    {
-      title: 'Habitats',
-      description:
-        'Explorez les différents habitats de notre zoo, comme la savane, la jungle et le marais.',
-      imgSrc: '/images/carousel-1.webp',
-      buttonText: 'Explorer les habitats',
-      link: '/habitats',
-    },
-    {
-      title: 'Tarifs',
-      description: 'Consultez nos tarifs pour planifier votre visite au zoo.',
-      imgSrc: '/images/carousel-1.webp',
-      buttonText: 'Voir les tarifs',
-      link: '/tarifs',
-    },
-    {
-      title: 'Contact',
-      description:
-        'Vous avez des questions ou des suggestions ? Contactez-nous facilement ici.',
-      imgSrc: '/images/carousel-1.webp',
-      buttonText: 'Nous contacter',
-      link: '/contact',
-    },
+  const commentData = [
+    { pseudo: "Jean Dupont", comment: "Très bon zoo, les animaux ont l'air heureux !", note: 4, date: "01/01/2024" },
+    { pseudo: "Marie Martin", comment: "Une expérience incroyable, la visite guidée était top !Une expérience incroyable, la visite guidée était top !Une expérience incroyable, la visite guidée était top !Une expérience incroyable, la visite guidée était top !Une expérience incroyable, la visite guidée était top !", note: 5, date: "01/09/2024"  },
+    { pseudo: "Lucie Lemoine", comment: "Zoo bien entretenu, un peu cher pour les enfants.", note: 3, date: "10/10/2024"  },
   ];
 
   return (
-    <div className="flex flex-col min-h-screen w-full bg-secondary-50">
-      {/* Carousel Section */}
-      <div className="flex flex-col items-center md:min-h-[70vh] w-full bg-secondary-100 pb-5">
-        {/* Header en position relative uniquement à partir de md */}
-        <div className="md:relative md:z-10 h-[200px] flex items-center">
+    <div className="flex flex-col min-h-screen w-full">
+      <div className="flex flex-col justify-start items-center md:min-h-[600px] w-full bg-secondary-100 md:py-10 py-5">
+        <div className="flex items-center">
           <Header />
         </div>
-
-        {/* Carousel en position absolute uniquement à partir de md */}
-        <div className="md:h-[75vh] w-full h-[300px] flex justify-center items-center md:absolute md:top-10 md:left-0">
+        <div className="md:h-[500px] md:w-[600px] h-[300px] w-full flex justify-center items-center md:py-10 py-4 px-10 md:px-0">
           <Carousel />
         </div>
       </div>
 
-      {/* Cards Section */}
-      <div className="flex flex-col gap-12 p-6 bg-secondary-100 pb-10">
-        {cardData.map((card, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row items-center ${
-              index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'
-            }`}
-          >
-            <div className="flex items-center justify-center w-full md:w-1/2">
-              <CardItem
-                title={card.title}
-                description={card.description}
-                imgSrc={card.imgSrc}
-                buttonText={card.buttonText}
-                onClick={() => router.push(card.link)}
-              />
-            </div>
-          </div>
-        ))}
+      <div className="grid grid-cols-4 justify-items-center gap-5 md:min-h-[600px] w-full bg-secondary-950 md:py-10 py-5">
+        <div className='flex justify-center w-[400px] h-[600px] py-20'>
+          <Card
+            imgSrc="/images/carousel-2.webp"
+            orientation="vertical" // Définir l'orientation (horizontal)
+            color= "secondary"
+            title="Services"
+            description="Découvrez tous les services proposés par notre zoo, y compris la restauration et les visites guidées."
+            href="/services" // Lien vers la page des services
+            size='l'
+            className='hover:shadow-lg hover:shadow-slate-500 rounded-2xl'
+          />
+        </div>
+        <div className='flex justify-center w-[400px] h-[600px] py-20'>
+          <Card
+            imgSrc="/images/carousel-2.webp"
+            orientation="vertical" // Définir l'orientation (horizontal)
+            color= "secondary"
+            title="Services"
+            description="Découvrez tous les services proposés par notre zoo, y compris la restauration et les visites guidées."
+            href="/services" // Lien vers la page des services
+            size='l'
+            className='hover:shadow-lg hover:shadow-slate-500 rounded-2xl'
+          />
+        </div>
+        <div className='flex justify-center w-[400px] h-[600px] py-20'>
+          <Card
+            imgSrc="/images/carousel-2.webp"
+            orientation="vertical" // Définir l'orientation (horizontal)
+            color= "secondary"
+            title="Services"
+            description="Découvrez tous les services proposés par notre zoo, y compris la restauration et les visites guidées."
+            href="/services" // Lien vers la page des services
+            size='l'
+            className='hover:shadow-lg hover:shadow-slate-500 rounded-2xl'
+          />
+        </div>
+        <div className='flex justify-center w-[400px] h-[600px] py-20'>
+          <Card
+            imgSrc="/images/carousel-2.webp"
+            orientation="vertical" // Définir l'orientation (horizontal)
+            color= "secondary"
+            title="Services"
+            description="Découvrez tous les services proposés par notre zoo, y compris la restauration et les visites guidées."
+            href="/services" // Lien vers la page des services
+            size='l'
+            className='hover:shadow-lg hover:shadow-slate-500 rounded-2xl'
+          />
+        </div>
+        <div className='flex justify-center w-[400px] h-[600px] py-20'>
+          <Card
+            imgSrc="/images/carousel-2.webp"
+            orientation="vertical" // Définir l'orientation (horizontal)
+            color= "secondary"
+            title="Services"
+            description="Découvrez tous les services proposés par notre zoo, y compris la restauration et les visites guidées."
+            href="/services" // Lien vers la page des services
+            size='l'
+            className='hover:shadow-lg hover:shadow-slate-500 rounded-2xl'
+          />
+        </div>
       </div>
 
       {/* Cards Schedule Section */}
       <div
         id="horaires"
-        className="flex flex-col justify-center items-center gap-y-8 bg-primary-500 py-10 px-5"
+        className="flex flex-col justify-center items-center gap-y-8 bg-primary-500 md:pb-20 md:pt-10 py-10"
       >
-        <h2 className="text-2xl font-bold text-center text-secondary-100 p-5">
+        <Typography variant="componentTitle" color="secondary" customClassName='flex justify-center'>
           Horaires d'ouverture
-        </h2>
-        <p className="text-center text-secondary-100">
+        </Typography>
+        <Typography variant="paragraph" color='white'>
           Découvrez nos horaires d'ouverture pour chaque jour de la semaine.
-        </p>
+        </Typography>
         <CardSchedule
           title="Horaires d'ouverture"
           time={CardScheduleData.map((list, index) => (
@@ -114,9 +126,25 @@ export default function Home() {
               </Typography>
             </div>
           ))}
-          imgSrc="/images/carousel-1.webp"
+          imgSrc="/images/carousel-2.webp"
         />
       </div>
+
+      {/* Cards Review Section */}
+      <div className=" md:p-20 p-10 bg-secondary-100">
+        <Typography variant="componentTitle" color="darkGray" customClassName='flex justify-center pb-10'>Avis des visiteurs</Typography>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {commentData.map((avis, index) => (
+            <CardReview
+              key={index}
+              pseudo={avis.pseudo}
+              date={avis.date}
+              comment={avis.comment}
+              note={avis.note}
+            />
+          ))}
+        </div>
+    </div>
     </div>
   );
 }

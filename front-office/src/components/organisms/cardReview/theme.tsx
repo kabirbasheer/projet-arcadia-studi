@@ -2,7 +2,7 @@ import { FlowbiteCardTheme } from 'flowbite-react/components/Card';
 
 export const customCardTheme: FlowbiteCardTheme = {
   root: {
-    base: '',
+    base: 'flex rounded-lg border-2 border-secondary-950 hover:border-primary-800',
     children: 'flex h-full flex-col justify-center gap-4 p-6',
     horizontal: {
       off: 'flex-col',

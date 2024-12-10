@@ -14,7 +14,7 @@ export const customNavbarTheme = (
       off: '',
     },
     inner: {
-      base: 'w-full flex justify-between items-center lg:flex-row flex-wrap p-5 lg:p-0',
+      base: 'w-full flex justify-between items-center lg:flex-row flex-wrap px-5 py-2 lg:p-0',
       fluid: {
         on: '',
         off: '',

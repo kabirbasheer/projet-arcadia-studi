@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/molecules/Button/Button';
 import { Card } from 'flowbite-react';
-import { customCardTheme } from './theme';
+import { Typography } from '@/components/atoms/Typography';
 
 interface CardItemProps {
   title: string;
@@ -10,6 +10,7 @@ interface CardItemProps {
   imgSrc: string;
   buttonText: string;
   onClick: () => void;
+  horizontal: boolean;
 }
 
 export const CardItem = ({
@@ -18,20 +19,22 @@ export const CardItem = ({
   imgSrc,
   buttonText,
   onClick,
+  horizontal= false,
 }: CardItemProps) => {
   return (
     <Card
       imgSrc={imgSrc}
       className="max-w-sm"
-      theme={customCardTheme}
-      horizontal
+      horizontal={horizontal}
     >
       <h5 className="text-2xl font-bold tracking-tight text-secondary-950">
         {title}
       </h5>
       <p className="font-normal text-primary-700">{description}</p>
-      <Button color="primary" size="l" onClick={onClick}>
-        {buttonText}
+      <Button color="primary" size="l" variant='underline' onClick={onClick}>
+        <Typography color='primary'>
+          {buttonText}
+        </Typography>
       </Button>
     </Card>
   );
