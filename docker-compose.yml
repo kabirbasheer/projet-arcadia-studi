@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  # Service de la base de données PostgreSQL
+  db-arcadia:
+    container_name: db-arcadia
+    image: postgres:16
+    restart: unless-stopped
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${DB_USER:-arcadia}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
+      POSTGRES_DB: ${DB_NAME:-db-arcadia}
+      PGDATA: /var/lib/postgresql/data/db-files/
+    networks:
+      - arcadia_network
+
+  # Service Adminer pour la gestion de la base de données
+  adminer:
+    container_name: adminer-${PROJECT_NAME:-arcadia-zoo}
+    image: adminer
+    restart: unless-stopped
+    ports:
+      - "${ADMINER_PORT:-8089}:8080"
+    environment:
+      ADMINER_DRIVER: pgsql
+      ADMINER_SERVER: db-arcadia
+      ADMINER_DB: ${DB_NAME:-db-arcadia}
+      ADMINER_USERNAME: ${DB_USER:-arcadia}
+      ADMINER_PASSWORD: ${DB_PASSWORD:-password}
+      ADMINER_AUTOLOGIN: 1
+    networks:
+      - arcadia_network
+
+  # Service backend (Node.js 20)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: arcadia-zoo-backend
+    networks:
+      - arcadia_network
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db-arcadia
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-postgres://arcadia:password@db-arcadia:5432/db-arcadia}
+
+  # Service frontend (par exemple, Next.js)
+  frontend:
+    build:
+      context: ./front-office
+      dockerfile: Dockerfile
+    container_name: arcadia-zoo-front-office
+    networks:
+      - arcadia_network
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    env_file:
+      - .env
+
+networks:
+  arcadia_network:
+    driver: bridge
+
+volumes:
+  db-data:
+    driver: local

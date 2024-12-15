@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "types": ["node", "vitest", "reflect-metadata"],
+    "outDir": "dist",
+    "allowJs": true
+  },
+  "include": [
+    "src/**/*",
+    ".eslintrc.js",
+    ".prettierrc.js",
+    "vitest.config.container.ts",
+    "vitest.config.unit.ts",
+    "../packages/sdk/orval.config.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}
