@@ -1,0 +1,51 @@
+{
+  "name": "arcadia-project",
+  "version": "0.0.0",
+  "scripts": {
+    "docker:start": "docker-compose up -d --remove-orphans",
+    "docker:stop": "docker-compose stop",
+    
+    "start:backend": "npm run docker:start backend",
+    "start:frontend": "npm run docker:start frontend",
+    "start:database": "npm run docker:start db-arcadia adminer",
+    "stop": "npm run docker:stop backend frontend db-arcadia adminer",
+    
+    "db:drop": "npm run docker:start db-arcadia && docker-compose run --rm db-arcadia npm run migration:drop",
+    "db:migrate": "npm run docker:start db-arcadia && docker-compose run --rm db-arcadia npm run migration:run",
+    "db:revert": "npm run docker:start db-arcadia && docker-compose run --rm db-arcadia npm run migration:revert",
+    "db:generate-migration": "npm run docker:start db-arcadia && docker-compose run --rm db-arcadia npm run migration:generate",
+    "db:load-fixtures": "npm run docker:start db-arcadia && docker-compose run --rm db-arcadia npm run fixtures:load",
+
+    "dev:backend": "npm run docker:start backend && cd backend && npm run dev",
+    "dev:frontend": "npm run docker:start frontend && cd frontend && npm run dev",
+    
+    "build:backend": "npm run docker:start backend && cd backend && npm run build",
+    "build:frontend": "npm run docker:start frontend && cd frontend && npm run build",
+    
+    "test:backend": "npm run docker:start backend && cd backend && npm run test",
+    "test:frontend": "npm run docker:start frontend && cd frontend && npm run test",
+    
+    "lint:backend": "cd backend && npm run lint",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+
+    "generate-openapi-doc": "cd backend && npm run generate-openapi-doc",
+    "generate-orval-sdk": "cd backend && npm run generate-orval-sdk",
+    "generate-sdk": "npm run generate-openapi-doc && npm run generate-orval-sdk"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "docker-compose": "^1.29.2"
+  },
+  "dependencies": {
+    "docker-compose": "^1.29.2"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Arcadia Team",
+  "license": "MIT"
+}
